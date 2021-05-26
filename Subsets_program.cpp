@@ -81,14 +81,6 @@ void PrintVector(vector<int>* V)
 int main()
 {
     vector<int> A1{1,3,5,6,2};
-//    PrintVector(&A);
-//
-//    vector<vector<int>> List =  Subset(&A1); //{{},{}}
-//    vector<vector<int>> :: iterator iter;
-//    for (iter = List.begin(); iter != List.end(); iter++)
-//    {
-//        PrintVector(&(*iter));
-//    }
     vector<vector<int>> Result;
 
     Result = Subset(&A1);
