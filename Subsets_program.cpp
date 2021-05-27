@@ -58,7 +58,7 @@ vector<vector<int>> Subset(vector<int>* V)
     }
     else
     {
-        vector<vector<int>> Result = {{},*V}; 
+        vector<vector<int>> Result = {{},*V};
         return Result;
     }
 }
@@ -74,8 +74,7 @@ void PrintVector(vector<int>* V)
         else
         cout<<*iter;
     }
-    cout<<"]"<<",";
-    cout<<endl;
+    cout<<"]";
 }
 
 int main()
@@ -89,6 +88,10 @@ int main()
     for (iter = Result.begin(); iter != Result.end(); iter++)
     {
         PrintVector(&(*iter));
+        if (iter+1 != Result.end())
+            cout<<","<<endl;
+        else
+            cout<<endl;
     }
     cout<<"]"<<endl;
     return 0;
