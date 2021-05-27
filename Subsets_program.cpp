@@ -74,7 +74,7 @@ void PrintVector(vector<int>* V)
         else
         cout<<*iter;
     }
-    cout<<"]";
+    cout<<"]"<<",";
     cout<<endl;
 }
 
