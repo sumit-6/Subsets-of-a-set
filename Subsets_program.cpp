@@ -58,7 +58,7 @@ vector<vector<int>> Subset(vector<int>* V)
     }
     else
     {
-        vector<vector<int>> Result = {{},*V}; // {{},{3}}
+        vector<vector<int>> Result = {{},*V}; 
         return Result;
     }
 }
